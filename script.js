@@ -19,3 +19,28 @@ formCotacao.addEventListener("submit", function (event) {
 
   window.open(`https://wa.me/5519998001107?text=${mensagem}`, "_blank");
 });
+
+/*banner de cookies*/
+const cookieBanner = document.getElementById("cookieBanner");
+
+const acceptCookies = document.getElementById("acceptCookies");
+
+const rejectCookies = document.getElementById("rejectCookies");
+
+if(localStorage.getItem("cookieChoice")){
+  cookieBanner.style.display = "none";
+}
+
+acceptCookies.addEventListener("click", () => {
+
+  localStorage.setItem("cookieChoice", "accepted");
+
+  cookieBanner.style.display = "none";
+});
+
+rejectCookies.addEventListener("click", () => {
+
+  localStorage.setItem("cookieChoice", "rejected");
+
+  cookieBanner.style.display = "none";
+});

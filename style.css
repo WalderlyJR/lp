@@ -141,6 +141,11 @@ nav a {
   display: flex;
   gap: 24px;
 }
+.hero-warning{
+  margin-top:12px;
+  font-size:13px;
+  color:#555;
+}
 
 .mini-card {
   background: white;
@@ -538,11 +543,12 @@ button {
 }
 
 .feature-item p{
+  color: #888888;
   font-size:14px;
   line-height:1.5;
   margin:0 auto;
   max-width:130px;
-  text-align:center;
+  text-align:left;
 }
 .alert h3 {
   color: #b00000;
@@ -750,6 +756,8 @@ footer{
   gap:24px;
 
   border-top:1px solid #ddd;
+
+  flex-wrap:wrap;
 }
 
 .footer-logo{
@@ -775,6 +783,26 @@ footer{
   text-decoration:none;
   font-size:13px;
   font-weight:600;
+}.footer-legal{
+  width:100%;
+
+  padding-top:14px;
+  margin-top:10px;
+
+  border-top:1px solid #e5e5e5;
+
+  text-align:center;
+
+  font-size:10px;
+  color:#999999;
+  line-height:1.7;
+  font-weight:400;
+}
+
+.footer-legal a{
+  color:#999999;
+  text-decoration:underline;
+  font-weight:400;
 }
 .cta-final form .btn-whatsapp{
   grid-column: 1 / -1;
@@ -820,6 +848,91 @@ footer{
 
 .whatsapp img:hover{
   transform: scale(1.08);
+}
+
+.privacy-page{
+  max-width:900px;
+  margin:60px auto;
+  padding:0 24px;
+  background:#fff;
+  color:#222;
+  line-height:1.7;
+}
+
+.privacy-page h1{
+  font-size:32px;
+  margin-bottom:28px;
+}
+
+.privacy-page h2{
+  font-size:18px;
+  margin-top:28px;
+  margin-bottom:10px;
+}
+
+.cookie-banner{
+  position:fixed;
+  bottom:0;
+  left:0;
+
+  width:100%;
+
+  background:#f8f8f8;
+
+  box-shadow:0 -2px 12px rgba(0,0,0,.08);
+
+  padding:16px 22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:20px;
+
+  z-index:999;
+}
+
+.cookie-banner p{
+  margin:0;
+
+  font-size:13px;
+  color:#333;
+
+  line-height:1.5;
+}
+
+.cookie-banner a{
+  color:#0b5b2a;
+  font-weight:600;
+}
+
+.cookie-actions{
+  display:flex;
+  gap:10px;
+}
+
+.cookie-actions button{
+  border:none;
+  padding:10px 18px;
+
+  border-radius:8px;
+
+  cursor:pointer;
+
+  font-size:12px;
+  font-weight:700;
+}
+
+#acceptCookies{
+  background:#0b5b2a;
+  color:#fff;
+}
+
+#rejectCookies{
+  background:#fff;
+  color:#555;
+
+  border:1px solid #ccc;
 }
 @media (max-width: 900px) {
 
