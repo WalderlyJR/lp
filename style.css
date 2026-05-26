@@ -134,6 +134,14 @@ nav a {
 .hero .sub span{
   color:#000000;
   font-weight:bold;
+}.hero-disclaimer{
+  margin-top:8px;
+  max-width:650px;
+  font-size:10px;
+  line-height:1.4;
+  color:#888888;
+  font-style:italic;
+  font-weight:400;
 }
 
 .hero-cards {
@@ -164,11 +172,14 @@ nav a {
 }
 
 .quote-box h2 {
-  color: #0b5b2a;
   text-align: center;
   margin-bottom: 22px;
+  color: #0b5b2a;
 }
 
+.quote-box h2 span{
+  color:#000;
+}
 input,
 select,
 button {
@@ -722,7 +733,23 @@ button {
 .faq-item.active p{
   display:block;
 }
+.cta-message-center{
+  text-align:center;
 
+  padding:24px 20px 10px;
+
+  font-size:24px;
+
+  line-height:1.5;
+
+  color:#000000;
+
+  font-weight:700;
+
+  max-width:900px;
+
+  margin:0 auto;
+}
 .cta-final {
   margin: 30px 38px;
   background: #08244a;
