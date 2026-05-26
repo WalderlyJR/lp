@@ -53,17 +53,28 @@
 
   <div class="quote-box">
     <h2>Receba sua cotação personalizada em menos de 2 minutos</h2>
-    <form id="formCotacao">
-      <input type="text" placeholder="Nome" required />
-      <input type="tel" placeholder="WhatsApp" required />
-     <select aria-label="Plano desejado" name="plano" required>
-        <option value="">Tipo de plano</option>
-        <option>PME</option>
-        <option>MEI</option>
-        <option>Familiar</option>
-      </select>
-      <button type="submit">Quero minha cotação agora</button>
-    </form>
+   <form action="https://formsubmit.co/contato@multicampsaude.com.br" method="POST">
+
+  <input type="hidden" name="_next" value="https://landingpage.multicamplanosdesaude.com.br/obrigado.html">
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="text" name="nome" placeholder="Nome" required />
+
+  <input type="tel" name="whatsapp" placeholder="WhatsApp" required />
+
+  <select aria-label="Plano desejado" name="plano" required>
+    <option value="">Tipo de plano</option>
+    <option>PME</option>
+    <option>MEI</option>
+    <option>Familiar</option>
+  </select>
+
+  <button type="submit">
+    Quero minha cotação agora
+  </button>
+
+</form>
 <div class="rating-box">
 
   <p class="rating-info">
