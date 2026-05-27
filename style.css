@@ -963,105 +963,199 @@ footer{
   border:1px solid #ccc;
 }.testimonials{
   display:none;
+}.menu-toggle{
+  display:none !important;
 }
+@media (max-width: 768px){
 
-@media (max-width: 900px) {
-
-  .header {
-    height: auto;
-    flex-direction: column;
-    gap: 16px;
-    padding: 18px;
+  .header{
+    height:72px;
+    padding:0 18px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
   }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
+  .header-logo{
+    height:42px;
   }
 
-  .header-contact {
-    flex-direction: column;
-    align-items: center;
+  .menu-toggle{
+    display:block !important;
+    background:transparent;
+    border:none;
+    color:#111;
+    font-size:34px;
+    padding:0;
+    margin:0;
+    width:auto;
+    line-height:1;
+    cursor:pointer;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 45px 20px;
+  .header nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    padding:18px;
+    flex-direction:column;
+    gap:14px;
+    z-index:99;
   }
 
-  .hero h1 {
-    font-size: 34px;
+  .header nav.active{
+    display:flex;
   }
 
-  .hero-cards {
-    flex-direction: column;
+  .header nav a{
+    font-size:16px;
+    font-weight:700;
   }
 
-  .mini-card {
-    width: 100%;
+  .header-contact{
+    display:none;
   }
 
-  .section {
-    padding: 28px 20px;
+  .hero{
+    grid-template-columns:1fr;
+    padding:34px 22px 40px;
+    gap:28px;
+    min-height:auto;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(255,255,255,.96) 0%,
+        rgba(255,255,255,.90) 45%,
+        rgba(255,255,255,.65) 100%
+      ),
+      url("img/torre\ 1.jpg") center/cover;
+  }
+
+  .hero h1{
+    font-size:36px;
+    line-height:1.12;
+    max-width:100%;
+  }
+
+  .hero p{
+    font-size:16px;
+    line-height:1.55;
+    max-width:100%;
+  }
+
+  .hero-disclaimer{
+    font-size:10px;
+    line-height:1.45;
+    color:#888;
+  }
+
+  .hero-cards{
+    flex-direction:row;
+    gap:12px;
+    margin-top:24px;
+  }
+
+  .mini-card{
+    width:50%;
+    padding:16px;
+    font-size:13px;
+  }
+
+  .quote-box{
+    width:100%;
+    padding:26px 20px;
+  }
+
+  .quote-box h2{
+    font-size:28px;
+    line-height:1.15;
+  }
+
+  .section{
+    padding:30px 20px;
   }
 
   .cards-grid,
   .cards-grid.three,
-  .testimonial-grid,
-  .faq-grid {
-    grid-template-columns: 1fr;
+  .faq-grid{
+    grid-template-columns:1fr;
   }
 
-  .partners-section {
-    grid-template-columns: 1fr;
+  .partners-section{
+    grid-template-columns:1fr;
   }
 
-  .plans-logos {
-    grid-template-columns: repeat(2, 1fr);
+  .plans-logos{
+    grid-template-columns:repeat(2,1fr);
   }
 
-  .problem-solution {
-    grid-template-columns: 1fr;
+  .problem-solution{
+    grid-template-columns:1fr;
   }
 
-  .features {
-    grid-template-columns: 1fr;
+  .features{
+    grid-template-columns:1fr;
   }
 
-  .feature-item {
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0;
+  .feature-item{
+    border-right:none;
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
   }
 
-  .feature-item:last-child {
-    border-bottom: none;
+  .cta-final{
+    grid-template-columns:1fr;
+    margin:24px 20px;
+    padding:28px 20px;
   }
 
-  .cta-final {
-    grid-template-columns: 1fr;
-    margin: 24px 20px;
-  }
-
-  .cta-final form {
-    grid-template-columns: 1fr;
+  .cta-final form{
+    grid-template-columns:1fr;
   }
 
   .cta-final select,
   .cta-final button,
-  .cta-final form .btn-whatsapp {
-    grid-column: 1 / -1;
+  .cta-final form .btn-whatsapp{
+    grid-column:1 / -1;
   }
 
-  footer {
-    flex-direction: column;
-    text-align: center;
+  footer{
+    flex-direction:column;
+    text-align:center;
+    padding:24px 20px;
   }
 
-  .whatsapp {
-    right: 16px;
-    bottom: 90px;
+  .footer-contact{
+    align-items:center;
   }
 
+  .whatsapp{
+    right:18px;
+    bottom:90px;
+  }
+
+  .whatsapp img{
+    width:58px;
+  }
+
+  .cookie-banner{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:18px;
+  }
+
+  .cookie-actions{
+    width:100%;
+  }
+
+  .cookie-actions button{
+    flex:1;
+  }
 }
